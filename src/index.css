@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+}
+
+/* Fondo con degradado */
+body {
+  background: linear-gradient(135deg, #02192b, #0e1a01);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Estilo del menú de navegación */
+nav {
+  background: #35383b;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Contenedor principal (estilo tarjeta) */
+.page {
+  max-width: 500px;
+  margin: 30px auto;
+  background: rgb(158, 144, 144);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Inputs */
+input[type="number"],
+input[type="text"] {
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+}
+
+/* Botones */
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Imagen en Home */
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 50%;
+  border: 3px solid #4a90e2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Listas (tablas de multiplicar) */
+ul {
+  margin-top: 15px;
+  padding: 0;
+}
+
+li {
+  background: #f7f9fc;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  font-size: 15px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: #eaf1fb;
+}
